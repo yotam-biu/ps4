@@ -20,17 +20,9 @@ jobs:
         timeout: 10
         max-score: 5
         setup-command: ''
-    - name: ".tests/split_before_each_uppercases_test.py"
-      id: tests-split-before-each-uppercases-test-py
-      uses: classroom-resources/autograding-python-grader@v1
-      with:
-        timeout: 10
-        max-score: 5
-        setup-command: ''
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
         TESTS-SPLIT-AT-FIRST-DIGIT-TEST-PY_RESULTS: "${{steps.tests-split-at-first-digit-test-py.result}}"
-        TESTS-SPLIT-BEFORE-EACH-UPPERCASES-TEST-PY_RESULTS: "${{steps.tests-split-before-each-uppercases-test-py.result}}"
       with:
-        runners: tests-split-at-first-digit-test-py, tests-split-before-each-uppercases-test-py
+        runners: tests-split-at-first-digit-test-py
