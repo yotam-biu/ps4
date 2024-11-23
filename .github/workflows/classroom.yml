@@ -13,8 +13,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: ".tests/split_at_first_digit_test.py"
-      id: tests-split-at-first-digit-test-py
+    - name: ".tests/split_before_each_uppercases_test.py"
+      id: tests-split-before-each-uppercases-test-py
       uses: classroom-resources/autograding-python-grader@v1
       with:
         timeout: 10
@@ -23,6 +23,6 @@ jobs:
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
-        TESTS-SPLIT-AT-FIRST-DIGIT-TEST-PY_RESULTS: "${{steps.tests-split-at-first-digit-test-py.result}}"
+        TESTS-SPLIT-BEFORE-EACH-UPPERCASES-TEST-PY_RESULTS: "${{steps.tests-split-before-each-uppercases-test-py.result}}"
       with:
-        runners: tests-split-at-first-digit-test-py
+        runners: tests-split-before-each-uppercases-test-py
