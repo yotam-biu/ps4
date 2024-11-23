@@ -27,4 +27,4 @@ Write `split_before_each_uppercase(formula)` to split a string before every uppe
 ### Instructions
 1. Implement both functions in `string_utils.py`.
 2. Test with examples and edge cases provided in the `.ipynb` files.
-3. Submit by commit the completed file.
+3. Submit (by commit) the completed file.
