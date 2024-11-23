@@ -31,6 +31,6 @@ jobs:
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
         TESTS-SPLIT-AT-FIRST-DIGIT-TEST-PY_RESULTS: "${{steps.tests-split-at-first-digit-test-py.result}}"
-        TESTS-SPLIT_BEFORE_EACH_UPPERCASES-PY_RESULTS: "${{steps.tests-split-before-each-uppercases-test-py.result}}"
+        TESTS-SPLIT-BEFORE-EACH-UPPERCASES-TEST-PY_RESULTS: "${{steps.tests-split-before-each-uppercases-test-py.result}}"
       with:
         runners: tests-split-at-first-digit-test-py, tests-split-before-each-uppercases-test-py
