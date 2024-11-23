@@ -4,7 +4,7 @@
 Implement two functions in `string_utils.py` to practice string manipulation.
 
 ### Problem 1: Split at First Digit
-Write `split_at_digit(s: str) -> tuple[str, int]` to split a string into:
+Write `split_at_digit(formula)` to split a string into:
 1. **Prefix**: The part before the first digit.
 2. **Number**: The first digit onward as an integer.  
 If no digits exist, return the original string and `1`.
@@ -16,7 +16,7 @@ If no digits exist, return the original string and `1`.
 ---
 
 ### Problem 2: Split Before Each Uppercase
-Write `split_before_each_uppercase(s: str) -> list[str]` to split a string before every uppercase letter. Keep the uppercase letters in the result.
+Write `split_before_each_uppercase(formula)` to split a string before every uppercase letter. Keep the uppercase letters in the result.
 
 **Examples**:  
 `split_before_each_uppercase("NaCl")` → `["Na", "Cl"]`  
