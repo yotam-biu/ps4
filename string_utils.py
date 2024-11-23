@@ -1,16 +1,5 @@
 def split_before_each_uppercases(formula):
-    if len(formula) == 0:
-       return []
-    start = 0
-    end = 1
-    split_formula = []
-    for char in formula[1:]:
-        if char.isupper():
-            split_formula.append(formula[start:end])
-            start = end
-        end += 1
-    split_formula.append(formula[start:end])
-    return split_formula
+    pass # Replace the `pass` with your code
 
 
 def split_at_first_digit(formula):
