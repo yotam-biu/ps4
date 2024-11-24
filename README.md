@@ -10,7 +10,7 @@ Write `split_at_digit(formula)` to split a string into:
 If no digits exist, return the original string and `1`.
 
 **Examples**:  
-`split_at_digit("H2O")` → `("H", 2)`  
+`split_at_digit("H22")` → `("H", 22)`  
 `split_at_digit("NaCl")` → `("NaCl", 1)`  
 
 ---
